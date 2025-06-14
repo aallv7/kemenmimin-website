@@ -20,7 +20,7 @@ const tentang: React.FC = () => {
           Organisasi ini bersifat fiktif, nama-nama yang disebutkan hanya sekedar bermain peran saja.
         </p>
         <Image 
-          src="./STRUKTUR.jpg" 
+          src="../STRUKTUR.jpg" 
           alt="Struktur" 
           width={0}
           height={0}
