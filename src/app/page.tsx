@@ -1,7 +1,6 @@
 // pages/index.tsx
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import Image from 'next/image';
 import React from 'react'; // Penting untuk JSX
 
 const HomePage: React.FC = () => {

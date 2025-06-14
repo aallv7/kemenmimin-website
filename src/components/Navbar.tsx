@@ -2,7 +2,6 @@
 'use client'; // Pastikan directive ini ada di baris paling atas
 
 import Link from 'next/link';
-import Image from 'next/image';
 import React, { useState } from 'react'; // Impor useState
 
 const Navbar: React.FC = () => {
