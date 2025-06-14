@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
           </a>
           <a href="./tentang/struktur">
           <Image 
-            src="/BIRMOKOM.svg" 
+            src="./BIRMOKOM.svg" 
             alt="Logo Kementerian Meme RI" 
             width={0}
             height={0}
