@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
         <div className="md:scale-80 sm:scale-100 md:-translate-y-25 justify-center content-center grid grid-cols-3 grid-rows-1">
           <a href="/tentang/struktur">
             <Image 
-            src="/BIRHUMAS.svg" 
+            src="./BIRHUMAS.svg" 
             alt="Logo Kementerian Meme RI" 
             width={0}
             height={0}
@@ -26,14 +26,14 @@ const HomePage: React.FC = () => {
           </a>
           <a href="">
             <Image 
-            src="/KEMENMIMIN.svg" 
+            src="./KEMENMIMIN.svg" 
             alt="Logo Kementerian Meme RI" 
             width={0}
             height={0}
             className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-1 relative translate-x-0 transition delay-150 duration-300 ease-in-out hover:scale-110"
             />
           </a>
-          <a href="/tentang/struktur">
+          <a href="./tentang/struktur">
           <Image 
             src="/BIRMOKOM.svg" 
             alt="Logo Kementerian Meme RI" 
