@@ -1,6 +1,7 @@
 // pages/index.tsx
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import Image from 'next/image';
 import React from 'react'; // Penting untuk JSX
 
 const HomePage: React.FC = () => {
@@ -15,13 +16,31 @@ const HomePage: React.FC = () => {
         
         <div className="md:scale-80 sm:scale-100 md:-translate-y-25 justify-center content-center grid grid-cols-3 grid-rows-1">
           <a href="/tentang/struktur">
-            <img src="/BIRHUMAS.svg" alt="Logo Kementerian Meme RI" className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-0 scale-80 relative md:translate-x-55 sm:translate-x-0 transition delay-150 duration-300 ease-in-out hover:-translate-x-5 hover:scale-110"/>
+            <Image 
+            src="/BIRHUMAS.svg" 
+            alt="Logo Kementerian Meme RI" 
+            width={0}
+            height={0}
+            className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-0 scale-80 relative md:translate-x-55 sm:translate-x-0 transition delay-150 duration-300 ease-in-out hover:-translate-x-5 hover:scale-110"
+            />
           </a>
           <a href="">
-            <img src="/KEMENMIMIN.svg" alt="Logo Kementerian Meme RI" className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-1 relative translate-x-0 transition delay-150 duration-300 ease-in-out hover:scale-110"/>  
+            <Image 
+            src="/KEMENMIMIN.svg" 
+            alt="Logo Kementerian Meme RI" 
+            width={0}
+            height={0}
+            className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-1 relative translate-x-0 transition delay-150 duration-300 ease-in-out hover:scale-110"
+            />
           </a>
           <a href="/tentang/struktur">
-            <img src="/BIRMOKOM.svg" alt="Logo Kementerian Meme RI" className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-0 scale-80 relative md:-translate-x-55 sm:translate-x-0 transition delay-150 duration-300 ease-in-out hover:translate-x-5 hover:scale-110"/>
+          <Image 
+            src="/BIRMOKOM.svg" 
+            alt="Logo Kementerian Meme RI" 
+            width={0}
+            height={0}
+            className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-0 scale-80 relative md:-translate-x-55 sm:translate-x-0 transition delay-150 duration-300 ease-in-out hover:translate-x-5 hover:scale-110"
+            />
           </a>
         </div>
         

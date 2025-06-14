@@ -1,6 +1,7 @@
 // pages/index.tsx
 import Head from 'next/head';
 import Layout from '../../../components/Layout';
+import Image from 'next/image';
 import React from 'react'; // Penting untuk JSX
 
 const tentang: React.FC = () => {
@@ -18,7 +19,13 @@ const tentang: React.FC = () => {
         <p className="md:text-xl text-gray-700 max-w-2xl mb-8 sm:text-sm">
           Organisasi ini bersifat fiktif, nama-nama yang disebutkan hanya sekedar bermain peran saja.
         </p>
-        <img src="/STRUKTUR.jpg" alt="Struktur" className="scale-80" />
+        <Image 
+          src="/STRUKTUR.jpg" 
+          alt="Struktur" 
+          width={0}
+          height={0}
+          className="scale-80 w-auto h-auto"
+        />        
       </section>
       <section className="text-center py-12 px-4 bg-gradient-to-br from-indigo-50 to-blue-100 rounded-lg shadow-xl mb-12">
         <h1 className="text-5xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
