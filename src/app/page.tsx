@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
       <section className="h-auto justify-center content-center grid md:grid-cols-1 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-2 text-center py-12 px-8 bg-gradient-to-br from-indigo-50 to-blue-100 rounded-lg shadow-xl mb-12">
         
         <div className="md:scale-80 sm:scale-100 md:-translate-y-25 justify-center content-center grid grid-cols-3 grid-rows-1">
-          <a href="/tentang/struktur">
+          <a href="./tentang/struktur">
             <Image 
             src="./BIRHUMAS.svg" 
             alt="Logo Kementerian Meme RI" 
