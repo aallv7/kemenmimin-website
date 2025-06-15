@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             {isOpen ? (
-              // Ikon 'X' saat menu terbuka
+              // ikon x
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
                 d="M6 18L18 6M6 6l12 12"
               />
             ) : (
-              // Ikon Hamburger saat menu tertutup
+              // ikon garis tiga
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           </svg>
         </button>
 
-        {/* Menu Navigasi Utama (Terlihat di Desktop, Tersembunyi di Mobile) */}
+        {/* menu */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <Link href="/" className="text-white hover:text-blue-200 transition duration-300">
@@ -76,28 +76,26 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
 
-      {/* Menu Mobile (Muncul saat Hamburger Diklik) */}
-      {/* Gunakan 'isOpen ? "block" : "hidden"' untuk mengontrol visibilitas */}
-      {/* atau lebih baik lagi, gunakan transition classes untuk animasi slide in/out */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-blue-700 py-2`}>
-        <ul className="flex flex-col items-center space-y-3">
+      {/* Menu Mobile legend */}
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-blue-500 rounded-lg py-2 px-5 transition-all delay-150 duration-300 ease-in-out`}>
+        <ul className="flex flex-col items-center space-y-3 transition-all delay-150 duration-300 ease-in-out">
           <li>
-            <Link href="/" className="block text-white hover:text-blue-200 transition duration-300 py-2 px-4" onClick={() => setIsOpen(false)}>
+            <Link href="/" className="block rounded-lg text-white hover:bg-indigo-800 hover:scale-105 transition-all delay-150 duration-300 ease-in-out py-2 px-5" onClick={() => setIsOpen(false)}>
               Homepage
             </Link>
           </li>
           <li>
-            <Link href="/tentang" className="block text-white hover:text-blue-200 transition duration-300 py-2 px-4" onClick={() => setIsOpen(false)}>
+            <Link href="/tentang" className="block rounded-lg text-white hover:bg-indigo-800 hover:scale-105 transition-all delay-150 duration-300 ease-in-out py-2 px-4" onClick={() => setIsOpen(false)}>
               Tentang
             </Link>
           </li>
           <li>
-            <Link href="/komunitas" className="block text-white hover:text-blue-200 transition duration-300 py-2 px-4" onClick={() => setIsOpen(false)}>
+            <Link href="/komunitas" className="block rounded-lg text-white hover:bg-indigo-800 hover:scale-105 transition-all delay-150 duration-300 ease-in-out py-2 px-4" onClick={() => setIsOpen(false)}>
               Komunitas
             </Link>
           </li>
           <li>
-            <Link href="/kontak" className="block text-white hover:text-blue-200 transition duration-300 py-2 px-4" onClick={() => setIsOpen(false)}>
+            <Link href="/kontak" className="block rounded-lg text-white hover:bg-indigo-800 hover:scale-105 transition-all delay-150 duration-300 ease-in-out py-2 px-4" onClick={() => setIsOpen(false)}>
               Kontak
             </Link>
           </li>

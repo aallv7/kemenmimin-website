@@ -12,17 +12,17 @@ const tentang: React.FC = () => {
       </Head>
 
       <section className="text-center py-12 px-4 bg-gradient-to-br from-indigo-50 to-blue-100 rounded-lg shadow-xl mb-12">
-        <h1 className="text-5xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
+        <h1 className="md:text-4xl sm:text-xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
           Sejarah Kementerian Meme Repulbik Indonesia
         </h1>
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+        <p className="md:text-xl sm:text-lg text-gray-700 max-w-2xl mx-auto mb-8">
           Kementerian Meme Republik Indonesia (KEMENMIMIN) adalah sebuah entitas fiktif yang didirikan dengan misi untuk membimbing dan mengedukasi masyarakat dalam interaksi sosial seputar budaya meme.
         </p>
 
-        <h2 className="text-3xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
+        <h2 className="md:text-3xl sm:text-xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
           Fase 1: Pendirian dan Masa Awal (Januari - Oktober 2024)
         </h2>
-        <p className="text-xl text-gray-700 text-justify max-w-2xl mx-auto mb-8">
+        <p className="md:text-xl sm:text-lg text-gray-700 text-justify max-w-2xl mx-auto mb-8">
           Tanggal Pendirian Resmi: KEMENMIMIN secara resmi didirikan pada 21 Januari 2024. Tanggal ini secara formal ditetapkan dalam Pasal 2, BAB II: PENDIRIAN dari Ketentuan Birokrasi Kementerian Meme Republik Indonesia (yang merupakan bagian dari SK/1/KMN.MMN/A/2025/I). Tanggal ini juga diperkuat oleh catatan deskripsi grup KEMENMIMIN yang dibuat oleh Andhika Wahyu Adi Pratama pada hari yang sama, menunjukkan peran beliau sebagai inisiator awal.
           <br /> <br />
           Kepemimpinan Awal: Pada masa-masa awal, kepemimpinan KEMENMIMIN melibatkan Andhika Wahyu Adi Pratama sebagai Menteri dan Maulvi Imaduddin sebagai Wakil Menteri.
@@ -31,10 +31,10 @@ const tentang: React.FC = () => {
           
         </p>
 
-        <h2 className="text-3xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
+        <h2 className="md:text-3xl sm:text-xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
           Fase 2: Dinamika Restrukturisasi dan Eksperimen Organisasi (November 2024 - April 2025)
         </h2>
-        <p className="text-xl text-gray-700 text-justify max-w-2xl mx-auto mb-8">
+        <p className="md:text-xl sm:text-lg text-gray-700 text-justify max-w-2xl mx-auto mb-8">
           Konsolidasi Kepengurusan (Oktober 2024): "Pengesahan Struktur Pengurus" pada 20 Oktober 2024 menjadi langkah awal dalam memformalkan dan mengonsolidasikan individu-individu dalam posisi kunci, menetapkan Maulvi sebagai Menteri dan Andhika sebagai Wakil Menteri, serta beberapa nama yang akan mengisi posisi vital di kemudian hari.
           <br /> <br />
           Perubahan Struktur Awal 2025:
@@ -48,10 +48,10 @@ const tentang: React.FC = () => {
           Evolusi Peran: Unit yang menangani hubungan masyarakat mengalami evolusi dari Biro Hubungan Masyarakat (BIRHUMASMIM) menjadi Biro Hubungan Masyarakat dan Kreatif Meme (BIRHUMASKRIFMIM), sebelum akhirnya bertransformasi menjadi Direktorat Jenderal Bimbingan Masyarakat Meme (BIMAS MEME). Demikian pula, fungsi moderasi komunitas yang sebelumnya mungkin tersebar kemudian dikonsolidasikan menjadi Direktorat Jenderal Biro Moderasi Komunitas, dan akhirnya menjadi Badan Rukun Komunitas (BARUKOM).
         </p>
 
-        <h2 className="text-3xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
+        <h2 className="md:text-3xl sm:text-xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
           Fase 3: Struktur Final dan Penegasan Aturan (Mei 2025)
         </h2>
-        <p className="text-xl text-gray-700 text-justify max-w-2xl mx-auto mb-8">
+        <p className="md:text-xl sm:text-lg text-gray-700 text-justify max-w-2xl mx-auto mb-8">
           Penetapan Struktur Resmi (10 Mei 2025): SK/1/KMN.MMN/A/2025/I secara resmi menetapkan struktur KEMENMIMIN saat ini.
           <br /> <br />
           SK ini juga meresmikan "Ketentuan Birokrasi" yang mengatur berbagai aspek seperti pendirian, identitas (logo dengan trollface dan semboyan "Jana Vilaksana" / "Rakyat Lucu"), sistem penomoran surat, dan keanggotaan.
@@ -60,7 +60,7 @@ const tentang: React.FC = () => {
           <br /> <br />
         </p>      
 
-        <p className="text-xl text-gray-700 text-justify max-w-2xl mx-auto mb-8">
+        <p className="md:text-xl sm:text-lg text-gray-700 text-justify max-w-2xl mx-auto mb-8">
           Sepanjang sejarahnya, KEMENMIMIN secara konsisten didefinisikan sebagai organisasi fiktif yang tidak memiliki wewenang hukum dalam pemerintahan Negara Republik Indonesia. Misinya adalah membimbing masyarakat dalam berinteraksi dengan meme secara positif, kreatif, dan menjaga kerukunan, sebuah semangat yang tertuang dalam semboyan "Jana Vilaksana" (Rakyat Lucu).
           <br /><br />
           Demikianlah sejarah KEMENMIMIN. Sejarah ini menunjukkan sebuah entitas yang dinamis, terus berevolusi dan beradaptasi untuk memenuhi tujuan fiktifnya dalam ekosistem meme.

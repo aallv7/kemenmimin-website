@@ -21,6 +21,7 @@ const HomePage: React.FC = () => {
             alt="Logo Kementerian Meme RI" 
             width={0}
             height={0}
+            priority
             className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-0 scale-80 relative md:translate-x-55 sm:translate-x-0 transition delay-150 duration-300 ease-in-out hover:-translate-x-5 hover:scale-110"
             />
           </a>
@@ -30,6 +31,7 @@ const HomePage: React.FC = () => {
             alt="Logo Kementerian Meme RI" 
             width={0}
             height={0}
+            priority
             className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-1 relative translate-x-0 transition delay-150 duration-300 ease-in-out hover:scale-110"
             />
           </a>
@@ -39,13 +41,14 @@ const HomePage: React.FC = () => {
             alt="Logo Kementerian Meme RI" 
             width={0}
             height={0}
+            priority
             className="drop-shadow-xl drop-shadow-blue-950 grid justify-center content-center w-auto h-auto z-0 scale-80 relative md:-translate-x-55 sm:translate-x-0 transition delay-150 duration-300 ease-in-out hover:translate-x-5 hover:scale-110"
             />
           </a>
         </div>
         
         <div className="md:text-left sm:text-center md:-translate-y-25">
-          <h1 className="md:text-5xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight sm:text-4xl">
+          <h1 className="md:text-5xl sm:text-xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
             Selamat Datang di Kementerian Meme Republik Indonesia
           </h1>
           <p className="md:text-xl text-gray-700 max-w-2xl mb-8 sm:text-base">
@@ -61,7 +64,7 @@ const HomePage: React.FC = () => {
       </section>
 
       <section className="py-12 px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">Mengenal KEMENMIMIN Secara Intim</h2>
+        <h2 className="md:text-4xl sm:text-xl font-bold text-center text-gray-800 mb-10">Mengenal KEMENMIMIN Secara Intim</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1: Visi */}
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-blue-500">

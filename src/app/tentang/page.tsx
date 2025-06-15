@@ -13,7 +13,7 @@ const tentang: React.FC = () => {
       </Head>
 
       <section className="py-12 px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">Mengenal KEMENMIMIN Secara Intim</h2>
+        <h2 className="md:text-4xl sm:text-xl font-bold text-center text-gray-800 mb-10">Mengenal KEMENMIMIN Secara Intim</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1: Visi */}
           <Link href="/tentang/struktur">

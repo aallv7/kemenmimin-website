@@ -28,7 +28,7 @@ const tentang: React.FC = () => {
         />        
       </section>
       <section className="text-center py-12 px-4 bg-gradient-to-br from-indigo-50 to-blue-100 rounded-lg shadow-xl mb-12">
-        <h1 className="text-5xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
+        <h1 className="md:text-4xl sm:text-xl font-extrabold text-blue-800 mb-4 tracking-tight leading-tight">
           Tugas Birokrat KEMENMIMIN
         </h1>
         <ul className="text-xl text-gray-700 text-justify max-w-2xl mx-auto mb-8">
