@@ -1,6 +1,6 @@
 ---
 title: Jomok, atau Pornografi?
-date: '2025-07-1'
+date: '2025-07-2'
 author: Menteri Meme Republik Indonesia
 category: Pengumuman
 thumbnail: /porhom.png
