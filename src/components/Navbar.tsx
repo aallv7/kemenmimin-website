@@ -69,8 +69,8 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/kontak" className="text-white hover:text-blue-200 transition duration-300">
-              Kontak
+            <Link href="/artikel" className="text-white hover:text-blue-200 transition duration-300">
+              Artikel
             </Link>
           </li>
         </ul>
@@ -95,8 +95,8 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/kontak" className="block rounded-lg text-white hover:bg-indigo-800 hover:scale-105 transition-all delay-150 duration-300 ease-in-out py-2 px-4" onClick={() => setIsOpen(false)}>
-              Kontak
+            <Link href="/artikel" className="block rounded-lg text-white hover:bg-indigo-800 hover:scale-105 transition-all delay-150 duration-300 ease-in-out py-2 px-4" onClick={() => setIsOpen(false)}>
+              Artikel
             </Link>
           </li>
         </ul>

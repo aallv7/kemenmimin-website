@@ -1,10 +1,17 @@
 // pages/index.tsx
+// src/app/page.tsx atau komponen React lain yang Anda inginkan
+import { getSortedArticlesData, ArticleData } from '../lib/articles';
+import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Image from 'next/image';
 import React from 'react'; // Penting untuk JSX
 
+// Metadata untuk halaman ini
+
 const HomePage: React.FC = () => {
+  const allArticles = getSortedArticlesData();
+  const latestArticle: ArticleData | undefined = allArticles.length > 0 ? allArticles[0] : undefined;
   return (
     <Layout>
       <Head>
@@ -63,6 +70,41 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Bagian Artikel Terbaru (Contoh Penempatan) */}
+      {latestArticle && (
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Artikel Terbaru</h2>
+          <div className="text-center">
+            {latestArticle.thumbnail && (
+              <div className="relative w-64 mx-auto h-64 mb-6 rounded-lg overflow-hidden">
+                <Image
+                  src={latestArticle.thumbnail}
+                  alt={latestArticle.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+              </div>
+            )}
+            <h3 className="text-3xl font-semibold text-blue-700 mb-3">
+              <Link href={`/artikel/${latestArticle.id}`} className="hover:underline">
+                {latestArticle.title}
+              </Link>
+            </h3>
+            <p className="text-md text-gray-600 mb-4">
+              Oleh {latestArticle.author} pada <time dateTime={latestArticle.date}>{new Date(latestArticle.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              {latestArticle.excerpt}
+            </p>
+            <Link href={`/artikel/${latestArticle.id}`} className="inline-block bg-blue-600 md:scale-100 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full md:text-lg sm:text-[1px] shadow-lg transition duration-300 transform hover:scale-105">
+              Baca Artikel Lengkap
+            </Link>
+          </div>
+        </section>
+      
+      )}
+
       <section className="py-12 px-4">
         <h2 className="md:text-4xl sm:text-xl font-bold text-center text-gray-800 mb-10">Mengenal KEMENMIMIN Secara Intim</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -90,22 +132,6 @@ const HomePage: React.FC = () => {
               <strong>Jana Vilaksana (Rakyat Lucu):</strong> Kejujuran, Tanggung Jawab, Kreativitas, Persatuan, dan Edukasi dalam setiap aspek budaya meme.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Hero section for current news or announcement (optional) */}
-      <section className="bg-blue-700 text-white py-12 px-4 rounded-lg shadow-lg mt-12 mb-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Pengumuman Terbaru</h2>
-          <p className="text-xl mb-6">
-            Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa Jawa.
-          </p>
-          <a
-            href="/komunitas"
-            className="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition duration-300 hover:bg-gray-200 transform hover:scale-105"
-          >
-            Lihat lebih lanjut di komunitas
-          </a>
         </div>
       </section>
     </Layout>
